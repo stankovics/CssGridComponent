@@ -1,0 +1,135 @@
+:root { /*var colors*/
+	--dark-cyan: hsl(179, 61%, 44%);
+	--cyan: hsl(179, 62%, 43%);
+	--light-cyan: hsl(179, 47%, 52%);
+	--bright-yellow: hsl(71, 73%, 54%);
+
+	--white: hsl(0, 100%, 100%);
+	--light-gray: hsl(204, 43%, 93%);
+	--grayish-blue: hsl(218, 22%, 67%);
+	--black: hsl(0, 0%, 0%);
+}
+html{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    
+}
+body{
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    background-color: var(--light-gray);
+    
+   
+
+}
+header{ /*header of box*/
+
+grid-area: header;
+padding: 2.5rem 2.25rem;
+}
+.price-box{ /*wrapper for price box*/
+    display:grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    border-radius: 20px;
+    box-shadow: 0 0 2rem -0.75rem var(--grayish-blue);
+    max-width: 700px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "header header"
+    "sub perks";
+    margin-top: 50%;
+    
+}
+.price-header{
+    margin: 0 0 1.5rem;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cyan);  
+}
+.sub-header{
+    margin: 0 0 1rem;
+    font-size: 1.3em;
+    color: var(--bright-yellow);
+}
+.header-description{
+    margin: 0;
+    line-height: 1.8;
+    color: var(--grayish-blue);
+}
+.sub{ /*subscrition section MONTHLY SUBSCRITION SECTION*/
+    height:100%;
+    width: 100%;
+    grid-area: sub;
+    background-color: var(--dark-cyan);
+    color: var(--light-gray);
+
+}
+.sub-title h2{
+    margin:0 0 1rem;
+    font-size: 1.3rem;
+}
+.sub-title{
+    margin-top:1.5rem;
+    margin-left:1.5rem;
+    font-size: 1.3em;
+}
+.sub-price{
+    margin-top:1.5rem; /**/
+    margin-left:1.5rem;
+    font-size: 2.1em;
+    font-weight: 700;
+}
+.sub-text{ /*per month*/
+    align-self: center;
+    margin-left: 0.8rem;
+    font-size: 0.5em;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.sub-description{
+    margin-top:1.5rem;
+    margin-left:1.5rem;
+
+}
+.btn{
+display: grid;
+width: 70%;
+margin-bottom: 1.5rem;
+margin-left:2rem;
+padding: 1rem;
+border-radius: 6px;
+max-width: 350px;
+background-color: var(--bright-yellow);
+font-size: 1.1em;
+font-weight: 700;
+text-decoration: none;
+text-align: center;
+color: var(--light-gray);
+box-shadow: 0 0.5rem 1rem -1rem var(--black);
+
+}
+.btn:hover{
+background-color:rgb(5, 66, 66);
+}
+/*perks section/ WHY? SECTION*/
+.perks{ 
+    height:100%;
+    width: 100%;
+    grid-area: perks;
+    background-color: var(--light-cyan);
+    color: var(--light-gray);
+}
+.perks-heading{
+    font-size: 1.3em;
+    margin-top:1.5rem;
+    margin-left:1.5rem;
+
+}
+.perks-list{
+    list-style: none;
+}
+.perks-list li{
+font-size: 0.9em;
+line-height: 1.7;
+}
